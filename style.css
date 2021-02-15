@@ -1,0 +1,247 @@
+
+#my{
+    position: fixed;
+    z-index: -1;
+    top: 0;
+}
+body {
+  width:100vw;
+  height: 97vh;
+  margin: 0;
+  font-family: Arial;
+  font-size: 17px;
+}
+.title{
+    position: relative;
+    text-align: center;
+    color: rgba(248, 139, 139, 0.993);
+}
+
+.glass {
+  display: flex;
+  margin-left:auto; margin-right:auto;
+  background: white;
+  min-height: 800px;
+  width: 75%;
+  background: linear-gradient(to left bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.1));
+  border-radius: 2rem;
+  z-index: 2;
+  backdrop-filter: blur(2rem);
+}
+
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    z-index: 1;
+  }
+  .fa:hover{
+      opacity: 0.6;
+    }
+  .fa-instagram{
+    position: absolute;
+    bottom: 270px;
+    right: 20px;
+    background-color:  #ec7777;
+    color: white;
+    }
+  .fa-facebook{
+    position: absolute;
+    bottom: 210px;
+    right: 20px;
+    background-color:  #3863f0;
+    color: white;  
+    }
+.fa-twitter{
+    position: absolute;
+    bottom: 150px;
+    right: 20px;
+    background-color:  #77c1ec;
+    color: white;
+    }
+
+    .front{
+      position: absolute;
+      display: flex;
+      width: 400px;
+      height: 600px;
+      -webkit-tap-highlight-color: transparent;
+      justify-content: center;
+      font-family: 'Dancing Script', cursive;
+      font-size: 25px;
+      color: #fff;
+      background-color: #63a4ff;
+      background-image: linear-gradient(315deg, #63a4ff 0%, #83eaf1 74%);
+      z-index: -1;
+    }
+    .container{
+      position: absolute;
+      width: 30%;
+      height: 70%;
+      top: 110px;
+      left: 40px;
+    }
+    .over{
+      top: 0;
+      position: absolute;
+      background-color: #63a4ff;
+      background-image: linear-gradient(315deg, #63a4ff 0%, #83eaf1 74%);
+      overflow: hidden;
+      width: 100%;
+      height: 100%;
+      -webkit-transform: scale(0);
+      -ms-transform: scale(0);
+      transform: scale(0);
+      -webkit-transition: .3s ease;
+      transition: .3s ease;
+    }
+    .container:hover .over {
+      -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+      transform: scale(1);
+    }
+
+    .text{
+      color: #fff;
+      font-size: 40px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      text-align: center;
+      font-family: 'Dancing Script', cursive;
+    }
+    .image{
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+    .cntr2{
+      position: absolute;
+      width: 40%;
+      height: 80%;
+      top: 110px;
+      right: 40px;
+    }
+    .hack{
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+    .cntr2:hover .over2 {
+      -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+      transform: scale(1);
+    }
+    .over2{
+      color: rgb(238, 156, 156);
+      font-size: 18px;
+      top: 0;
+      position: absolute;
+      overflow: hidden;
+      width: 100%;
+      height: 100%;
+      -webkit-transform: scale(0);
+      -ms-transform: scale(0);
+      transform: scale(0);
+      -webkit-transition: .3s ease;
+      transition: .3s ease;
+    }
+
+    .cr {
+      width: 100%;
+      background-color: #ddd;
+    } 
+    
+    .skills {
+      text-align: right;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      color: white;
+    }
+    
+    .html {width: 60%; background-color: #4CAF50;}
+    .css {width: 60%; background-color: #2196F3;}
+    .C {width: 60%; background-color: #4CAF50;}
+    .python {width: 30%; background-color: #808080;}
+
+    #ab1{
+      position: absolute;
+      top: 40px;
+      left: 14%;
+    }
+    #ab2{
+      position: absolute;
+      top: 40px;
+      right: 19%;
+    }
+    .if{
+      display: none;
+    }
+
+
+  @media screen and (max-width: 700px)
+  {
+    .glass{
+      width: 400px;
+      height: 1150px;
+    }
+    .container{
+      top: 6%;
+      width: 95%;
+      height: auto;
+      left: 2.5%;
+    }
+    .cntr2{
+      right: auto;
+      left: 2.5%;
+      height: auto;
+      width: 95%;
+      top: auto;
+      bottom: 0;
+    }
+    #ab1{
+     display: block;
+     top: 0;
+     left: 40%;
+    }
+    #ab2{
+      left: 40%;
+      top: auto;
+      right: auto;
+      bottom: 36%;
+      z-index: 1;
+    }
+    .fa{
+      position: relative;
+      right: auto;
+      left: 25%;
+      bottom: auto;
+    }
+    .if{
+      margin-left: auto;
+      margin-right: auto;
+      background-color: rgb(240, 240, 240);
+      width: 250px;
+      display: block;
+      font-size: 20px;
+      text-align: center;
+    }
+  }
+  @media (min-aspect-ratio: 16/9) {
+    #my {
+        width:100%;
+        height: auto;
+    }
+}
+@media (max-aspect-ratio: 16/9) {
+    #my { 
+        width:auto;
+        height: 100%;
+    }
+}
